@@ -1,0 +1,6 @@
+wget https://fast.dpdk.org/rel/dpdk-20.02.1.tar.xz
+tar xf dpdk-20.02.1.tar.xz
+cd dpdk-stable-20.02.1
+make config T=x86_64-native-linux-gcc
+make T=x86_64-native-linux-gcc -j8
+sudo make T=x86_64-native-linux-gcc install -j8
